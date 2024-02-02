@@ -2,6 +2,8 @@ const User = require("../schema/User");
 const { body, validationResult } = require("express-validator");
 const router = require("express").Router();
 
+
+// route for adding a new user account 
 router.post(
     
   "/add-account",
@@ -36,7 +38,7 @@ router.post(
 );
 
 
-
+// route for fetching data based on email 
 router.post(
     
   "/get-data",

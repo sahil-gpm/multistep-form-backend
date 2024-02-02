@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
+//user schema for storing user in the database
 const userSchema = new Schema({
   firstname: { type: String, required: true },
   lastname: { type: String, required: true },
