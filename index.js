@@ -8,7 +8,7 @@ const app = express();
 // adding middlewares
 app.use(
   cors({
-    origin:"https://multistep-form-eta.vercel.app",
+    origin:"*",
   })
 );
 
