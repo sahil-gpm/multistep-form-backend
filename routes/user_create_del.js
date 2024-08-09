@@ -28,6 +28,7 @@ router.post(
         await User.create(req.body);
         return res.json({ success: true });
       } catch (e) {
+        console.log(e.message);
         return res.json({ success: false,msg:e.message });
       }
     } else {
