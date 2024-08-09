@@ -10,7 +10,7 @@ const app = express();
 // adding middlewares
 app.use(
   cors({
-    origin:process.env.FRONTEND,
+    origin:process.env.FRONTEND || "https://multistep-form-eta.vercel.app/",
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   })
 );
