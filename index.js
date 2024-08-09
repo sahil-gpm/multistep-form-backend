@@ -3,12 +3,14 @@ const cors = require("cors");
 const dotenv = require('dotenv')
 const connectToMongo = require('./db/mongo')
 
+dotenv.config();
+
 const app = express();
 
 // adding middlewares
 app.use(
   cors({
-    origin:"*",
+    origin:process.env.FRONTEND,
   })
 );
 
